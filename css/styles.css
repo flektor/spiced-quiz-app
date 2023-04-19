@@ -1,0 +1,17 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app__title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  font-size: larger;
+  font-weight: 700;
+  padding: 1.2em;
+  background-color: rgb(122, 148, 231);
+  color: white;
+  box-shadow: -1em 0 0.2em 0.05em gray;
+}
