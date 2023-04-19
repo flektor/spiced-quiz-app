@@ -1,4 +1,5 @@
-/* @import "./question_card.css"; */
+@import "./global.css";
+@import "./question_card.css";
 
 * {
   box-sizing: border-box;
@@ -22,7 +23,7 @@ main {
   font-weight: 700;
   padding-top: 1.2em;
   padding-bottom: 1.2em;
-  background-color: rgb(122, 148, 231);
+  background-color: var(--main-color);
   color: white;
   box-shadow: 0 0 0.2em 0.05em gray;
   width: 100%;
@@ -30,7 +31,7 @@ main {
 
 .main__nav {
   color: white;
-  background-color: rgb(122, 148, 231);
+  background-color: var(--main-color);
   position: fixed;
   bottom: 0;
   display: flex;
