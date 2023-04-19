@@ -4,7 +4,7 @@
   margin-top: 2em;
   margin-bottom: 1em;
   padding: 1em;
-  border: 1px solid rgb(122, 148, 231);
+  border: 1px solid var(--main-color);
   border-radius: 0.2em;
   position: relative;
 }
@@ -39,9 +39,9 @@
   appearance: none;
   align-self: center;
   padding: 1em;
-  color: rgb(122, 148, 231);
+  color: var(--main-color);
   border-radius: 1em;
-  border: 1px solid rgb(122, 148, 231);
+  border: 1px solid var(--main-color);
   /* position: relative; */
 }
 .question__card .show-hide__button:checked:after {
@@ -64,7 +64,7 @@
 
 .question__card .show-hide__button:hover {
   cursor: pointer;
-  box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.397);
+  box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.4);
 }
 
 .question__card .question__anwser {
