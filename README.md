@@ -1,1 +1,1 @@
-# Quiz app for Chichory
+# Quiz app for Chichory 🌶️
