@@ -1,0 +1,91 @@
+.question__card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding: 1em;
+  border: 1px solid rgb(122, 148, 231);
+  border-radius: 0.2em;
+  position: relative;
+}
+
+.question__card .bookmark__button {
+  position: absolute;
+  right: 0.5em;
+  top: -0.8em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("../images/bookmark.svg");
+  background-size: 2em 2em;
+  background-repeat: no-repeat;
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+}
+
+.question__card .bookmark__button:checked {
+  background-image: url("../images/bookmark_filled.svg");
+}
+
+.question__card h2 {
+  padding: 0.5em;
+  text-align: center;
+}
+
+.question__card .show-hide__button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  align-self: center;
+  padding: 1em;
+  color: rgb(122, 148, 231);
+  border-radius: 1em;
+  border: 1px solid rgb(122, 148, 231);
+  /* position: relative; */
+}
+.question__card .show-hide__button:checked:after {
+  content: "Hide answer";
+}
+
+.question__card .show-hide__button::after {
+  content: "Show answer";
+}
+
+.question__card .question__anwser {
+  visibility: hidden;
+  height: 0;
+}
+
+.question__card .show-hide__button:checked + .question__anwser {
+  visibility: visible;
+  height: 100%;
+}
+
+.question__card .show-hide__button:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.397);
+}
+
+.question__card .question__anwser {
+  border: 2px dashed rgb(89, 202, 61);
+  border-radius: 0.2em;
+  padding: 1em;
+  margin-top: 1em;
+  font-style: italic;
+
+  text-align: center;
+  align-self: center;
+}
+
+.question__card .tags {
+  padding: 1em 1em 1em 1em;
+}
+
+.question__card .tags span {
+  padding: 0.5em;
+  border-radius: 0.7em;
+  background-color: rgb(194, 194, 194);
+  color: white;
+  font-size: small;
+}
