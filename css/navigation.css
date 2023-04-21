@@ -1,6 +1,6 @@
 .main__nav {
   color: white;
-  background-color: rgb(122, 148, 231);
+  background-color: var(--main-color);
   position: fixed;
   bottom: 0;
   display: flex;
