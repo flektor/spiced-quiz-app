@@ -1,0 +1,55 @@
+@import url("./switch.css");
+
+.profile .avatar__img {
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+  margin: 1em;
+}
+
+.profile .profile-user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.profile .profile-settings {
+  margin-top: 3em;
+}
+
+.profile .profile-settings p,
+.profile .profile-settings h3,
+.profile .profile-info p,
+.profile .profile-info h3 {
+  margin: 1em;
+}
+
+.profile .counters {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 1;
+}
+
+.profile .counters li {
+  display: flex;
+  align-items: center;
+  margin: 1px;
+  padding: 0.5em 1em;
+  border: 1px solid black;
+  border-radius: 0.5em;
+}
+.profile .counters li img {
+  margin-right: 1em;
+}
+
+.profile .counter__img {
+  width: 2em;
+}
+
+.profile .theme-settings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em;
+}
