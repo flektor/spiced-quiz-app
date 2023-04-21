@@ -1,0 +1,17 @@
+.main__nav {
+  color: white;
+  background-color: rgb(122, 148, 231);
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+}
+
+.main__nav img {
+  width: 2em;
+  height: 2em;
+}
