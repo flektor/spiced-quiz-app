@@ -1,14 +1,32 @@
 loadTheme();
 
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (event) => {
+  if (localStorage.getItem("theme")) return;
+  const newColor = event.matches ? "dark" : "light";
+  console.log(newColor);
+  setThemeColor(newColor);
+});
+
 function loadTheme() {
-  const defaultOSColor = document.getElementsByTagName("html")[0].getAttribute("data-bs-theme");
-  const storedColor = localStorage.getItem("data-bs-theme");
+  const storedColor = localStorage.getItem("theme");
+  const color = storedColor ?? getOSColorTheme();
+  setThemeColor(color);
+  return color;
+}
 
-  const color = storedColor ?? defaultOSColor;
-
+function setThemeColor(color) {
   if (!["dark", "light"].includes(color)) return;
 
-  document.body.classList.add("data-bs-theme", color);
+  document.body.classList.remove("light", "dark");
+  document.body.classList.add(color);
+}
 
-  return color;
+function getOSColorTheme() {
+  if (!window.matchMedia) return "light";
+
+  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    return "dark";
+  }
+
+  return "light";
 }

@@ -4,16 +4,6 @@
   height: 2em;
 }
 
-.question__icon path {
-  stroke: var(--background-color);
-  fill: var(--text-color);
-}
-
-.bookmark__icon path {
-  fill: var(--text-color);
-  stroke: var(--text-color);
-}
-
 .main__nav .profile__icon circle {
   fill: none;
 }

@@ -1,12 +1,15 @@
 updateCounters();
 updateThemeSwitch();
 
-function updateThemeSwitch() {
-  const isDarkMode = localStorage.getItem("data-bs-theme") === "dark";
-  if (!isDarkMode) return;
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+  if (localStorage.getItem("theme")) return;
+  updateThemeSwitch();
+});
 
+function updateThemeSwitch() {
+  const storedColor = localStorage.getItem("theme") ?? getOSColorTheme();
   const themeSwitch = document.querySelector('[data-js="theme-switch"]');
-  themeSwitch.checked = isDarkMode;
+  themeSwitch.checked = storedColor === "dark";
 }
 
 function updateCounters() {
@@ -20,14 +23,12 @@ function updateCounters() {
 }
 
 function changeTheme() {
-  const color = localStorage.getItem("data-bs-theme");
+  const color = localStorage.getItem("theme") ?? getOSColorTheme();
   const newColor = color === "dark" ? "light" : "dark";
   addTransitions();
-  if (color) {
-    document.body.classList.remove("data-bs-theme", color);
-  }
-  document.body.classList.add("data-bs-theme", newColor);
-  localStorage.setItem("data-bs-theme", newColor);
+  document.body.classList.remove("light", "dark");
+  document.body.classList.add(newColor);
+  localStorage.setItem("theme", newColor);
 
   return newColor;
 }
