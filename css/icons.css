@@ -1,0 +1,52 @@
+.icon,
+.icon svg {
+  width: 2em;
+  height: 2em;
+}
+
+.question__icon path {
+  stroke: var(--background-color);
+  fill: var(--text-color);
+}
+
+.bookmark__icon path {
+  fill: var(--text-color);
+  stroke: var(--text-color);
+}
+
+.main__nav .profile__icon circle {
+  fill: none;
+}
+
+.main__nav .profile__icon path {
+  fill: var(--text-color);
+}
+
+.main__nav .profile__icon.focused__icon path {
+  fill: var(--background-color);
+}
+
+.main__nav .bookmark__icon path {
+  fill: var(--main-color);
+  stroke: var(--text-color);
+}
+
+.main__nav .home__icon path {
+  stroke: var(--text-color);
+  fill: none;
+}
+
+.main__nav .bookmark__icon.focused__icon path,
+.main__nav .home__icon.focused__icon path {
+  stroke: var(--background-color);
+  fill: none;
+}
+
+body.dark .main__nav .profile__icon.focused__icon path {
+  fill: var(--secondary-color);
+}
+
+body.dark .main__nav .bookmark__icon.focused__icon path,
+body.dark .main__nav .home__icon.focused__icon path {
+  fill: var(--secondary-color);
+}
