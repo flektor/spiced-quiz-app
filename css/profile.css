@@ -36,15 +36,17 @@
   align-items: center;
   margin: 1px;
   padding: 0.5em 1em;
-  border: 1px solid black;
+  border: 1px solid var(--secondary-color);
   border-radius: 0.5em;
 }
-.profile .counters li img {
-  margin-right: 1em;
+
+.profile .counters .icon {
+  margin-right: 0.5em;
 }
 
-.profile .counter__img {
-  width: 2em;
+.profile .counters .icon path {
+  fill: var(--secondary-color);
+  stroke: none;
 }
 
 .profile .theme-settings {
@@ -52,4 +54,8 @@
   justify-content: space-between;
   align-items: center;
   margin: 1em;
+}
+
+.transition {
+  transition: 1s;
 }

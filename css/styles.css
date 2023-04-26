@@ -1,4 +1,5 @@
 @import url("./global.css");
+@import url("./icons.css");
 @import url("./question-card.css");
 @import url("./navigation.css");
 @import url("./profile.css");
@@ -32,17 +33,4 @@ main {
 
 .code {
   font-family: Consolas;
-}
-
-.no-select {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.no-select:focus {
-  outline: none !important;
 }

@@ -1,3 +1,23 @@
-:root {
-  --main-color: rgb(122, 148, 231);
+body {
+  --text-color: #111111;
+  --main-color: #7a94e7;
+  --background-color: #e1e1e1;
+  --secondary-color: var(--main-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--main-color);
+}
+
+body.dark a {
+  color: var(--secondary-color);
+}
+
+body.dark {
+  --text-color: #e1e1e1;
+  --main-color: #111111;
+  --secondary-color: #bb86fc;
+  --background-color: #292929;
 }
