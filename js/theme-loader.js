@@ -3,7 +3,6 @@ loadTheme();
 window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (event) => {
   if (localStorage.getItem("theme")) return;
   const newColor = event.matches ? "dark" : "light";
-  console.log(newColor);
   setThemeColor(newColor);
 });
 

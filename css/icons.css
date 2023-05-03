@@ -12,6 +12,24 @@
   fill: var(--text-color);
 }
 
+.main__nav .add-form__icon.focused__icon path {
+  fill: var(--background-color);
+}
+
+body.dark .main__nav .add-form__icon.focused__icon path {
+  fill: var(--secondary-color);
+}
+.main__nav .add-form__icon path {
+  fill: var(--text-color);
+}
+
+.main__nav svg.add-form__icon {
+  /* stroke: var(--text-color); */
+  fill: var(--text-color);
+  width: 2.2em;
+  height: 2.2em;
+}
+
 .main__nav .profile__icon.focused__icon path {
   fill: var(--background-color);
 }
