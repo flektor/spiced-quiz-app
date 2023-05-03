@@ -3,6 +3,7 @@
 @import url("./question-card.css");
 @import url("./navigation.css");
 @import url("./profile.css");
+@import url("./form.css");
 
 * {
   box-sizing: border-box;
