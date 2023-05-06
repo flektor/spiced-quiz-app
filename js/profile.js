@@ -13,13 +13,10 @@ function updateThemeSwitch() {
 }
 
 function updateCounters() {
-  const bookmarksCounter = localStorage.getItem("bookmarks-counter") ?? 0;
-  const questionsCounter = localStorage.getItem("questions-counter") ?? 0;
   const bookmarksElement = document.querySelector('[data-js="bookmarks-counter"]');
   const questionsElement = document.querySelector('[data-js="questions-counter"]');
-
-  bookmarksElement.innerText = bookmarksCounter;
-  questionsElement.innerText = questionsCounter;
+  bookmarksElement.innerText = state.bookmarks.length;
+  questionsElement.innerText = state.cards.size;
 }
 
 function changeTheme() {
